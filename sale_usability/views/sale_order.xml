@@ -22,10 +22,10 @@
             <attribute name="confirm">Are you sure you want to cancel this sale order?</attribute>
         </button>
         <!-- client_order_ref is an important field, so we should put it in the top like in v8, not hidden in the second tab -->
-        <field name="client_order_ref" position="replace"/>
+        <!-- <field name="client_order_ref" position="replace"/>
         <field name="date_order" position="after">
             <field name="client_order_ref"/>
-        </field>
+        </field> -->
         <button name="action_quotation_send" states="sent,sale" position="after">
             <button name="%(sale.action_report_saleorder)d" type="action" string="Print" states="draft,sent,sale,done"/>
         </button>
